@@ -55,12 +55,12 @@ body {
   color: var(--active-color);
 }
 
-.list_item:first-child .link {
+.link.is-active {
   position: relative;
   color: var(--active-color);
 }
 
-.list_item:first-child .link::after {
+.link.is-active::after {
   content: '';
   position: absolute;
   height: 4px;
