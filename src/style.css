@@ -1,3 +1,8 @@
+:root {
+  --active-color: #00acdc;
+  --primire-color: #000;
+}
+
 body {
   margin: 0;
   font-family: Roboto, sans-serif;
@@ -41,18 +46,18 @@ body {
   height: 60px;
   display: flex;
   align-items: center;
-  color: #000;
+  color: var(--primire-color);
   white-space: nowrap;
   font-size: 12px;
 }
 
 .link:hover {
-  color: #00acdc;
+  color: var(--active-color);
 }
 
 .list_item:first-child .link {
   position: relative;
-  color: #00acdc;
+  color: var(--active-color);
 }
 
 .list_item:first-child .link::after {
@@ -60,7 +65,7 @@ body {
   position: absolute;
   height: 4px;
   width: 100%;
-  background-color: #00acdc;
+  background-color: var(--active-color);
   bottom: 0;
   left: 0;
   border-radius: 8px;
